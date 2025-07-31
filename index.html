@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Tester</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Typing Speed Tester</h1>
+            <p>Test your typing speed and accuracy</p>
+        </header>
+
+        <main>
+            <div class="test-area">
+                <div class="prompt-container">
+                    <h2>Type the text below:</h2>
+                    <div id="prompt-text" class="prompt-text"></div>
+                </div>
+
+                <div class="input-container">
+                    <textarea 
+                        id="typing-input" 
+                        class="typing-input" 
+                        placeholder="Start typing here..."
+                        disabled
+                    ></textarea>
+                </div>
+
+                <div class="controls">
+                    <button id="start-btn" class="btn btn-primary">Start Test</button>
+                    <button id="restart-btn" class="btn btn-secondary" style="display: none;">New Test</button>
+                </div>
+            </div>
+
+            <div class="results" id="results" style="display: none;">
+                <h2>Results</h2>
+                <div class="results-grid">
+                    <div class="result-item">
+                        <span class="result-label">Words Per Minute:</span>
+                        <span id="wpm" class="result-value">0</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Time Taken:</span>
+                        <span id="time-taken" class="result-value">0s</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Accuracy:</span>
+                        <span id="accuracy" class="result-value">0%</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
