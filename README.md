@@ -41,15 +41,6 @@ A lightweight, focused web application for measuring typing speed and accuracy w
 - **Red highlighting**: Incorrect characters
 - **Yellow highlighting**: Current typing position
 
-## File Structure
-
-```
-typing-web/
-├── index.html      # Main HTML structure
-├── styles.css      # Modern, responsive styling
-├── script.js       # Core typing logic and functionality
-└── README.md       # Project documentation
-```
 
 ## Browser Compatibility
 
